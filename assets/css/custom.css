@@ -1,0 +1,334 @@
+.text-creuto {
+  color: #0d3dee;
+}
+.custom-title-container {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  text-align: center;
+}
+.custom-hero-profile {
+  border-radius: 50%;
+  width: 280px;
+  height: 280px;
+  margin: 10px;
+}
+.custom-text-box p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #495057;
+  margin-bottom: 1.5rem;
+}
+
+.custom-text-box p.lead {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #212529;
+}
+
+/* Custom styling for the select dropdown */
+.custom-select {
+  /* Reset default browser styles */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  /* Box Model & Sizing */
+  display: block;
+  width: 80%;
+  padding: 15px 40px 15px 20px;
+  border-radius: 50px;
+  border: 0px;
+  background-color: #fff;
+
+  /* Typography */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+
+  /* Custom Dropdown Arrow */
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 16px 12px;
+
+  /* Smooth transition for focus state */
+  transition: border-color 0.2s ease-in-out;
+}
+
+/* Style for when the select box is clicked or focused */
+.custom-select:focus {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+/* Styling for dropdown options (Limited & Inconsistent Browser Support) */
+.custom-select option {
+  /* This will likely just show the white background of the dropdown panel */
+  background: transparent;
+  color: #333;
+  padding: 12px 20px; /* Note: Padding is often ignored by browsers */
+  font-size: 20px;
+  border: 0px;
+}
+
+/* A clean hover effect */
+.custom-select option:hover {
+  background-color: #f0e6ff; /* A very light purple for hover */
+  color: #333;
+}
+.custom-select-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+  border: 1px solid #ced4da; 
+  background-color: #fff;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+}
+.custom-select-container:focus {
+  border-color: #8a2be2; /* Changes the border from grey to purple */
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+.custom-input-group{
+    display:flex;
+    flex-wrap: wrap;
+    text-transform: none;
+}
+label{
+    background-color:transparent;
+    border: #495057 1px;
+    border-radius: 50px;
+}
+/* --- Default State for the Buttons --- */
+.custom-input-group .btn {
+  background-color: transparent !important; /* Force a transparent background */
+  border: 1px solid #ced4da;            /* A small, light grey border */
+  color: #495057;
+  text-transform: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* --- Hover State (when mouse is over a button) --- */
+.custom-input-group .btn:hover {
+  background-color: #f8f9fa; /* A very light grey on hover */
+}
+
+/* --- Selected State (when the checkbox is checked) --- */
+.custom-input-group .btn-check:checked + .btn {
+  background-color: #8a2be2; 
+  border-color: #8a2be2;   
+  color:  #8a2be2;  
+}
+.custom-submit{
+    display: flex;
+    flex-direction: row;
+    justify-content:start ;
+}
+.custom-faq{
+    padding:100px;
+}
+
+.custom-vertical-nav{
+    border: 1px solid #ced4da;   
+    border-radius: 30px;
+    height:350px;
+}
+.custom-nav-container{
+    padding:0px 90px 0px 90px;
+}
+.custom-tab-bar{
+    background-color: #0d3dee;
+    border-bottom-left-radius: 30px;
+    border-top-left-radius: 30px;
+    height:350px;
+    padding:20px 20px;
+}
+
+
+/* --- Main Tab Container --- */
+.custom-tab {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 12px;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* --- Tab Buttons (Links) --- */
+.custom-tablinks {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  
+  font-size: 18px; /* Adjusted for better readability */
+  font-weight: 600; /* Standard semibold value */
+  color: white;
+  text-align: left;
+  
+  background-color: transparent;
+  border: 1px solid transparent; /* Hidden border by default */
+  border-radius: 8px; /* Rounded corners for all states */
+  cursor: pointer;
+  
+  transition: all 0.3s ease;
+}
+
+/* --- Icons within Buttons --- */
+.custom-tablinks i {
+  margin-right: 1rem;
+  width: 20px; /* Helps align icons neatly if they vary in width */
+}
+
+/* --- Arrow Icon (hidden by default) --- */
+.custom-tablinks .arrow-icon {
+  margin-left: auto; /* Pushes arrow to the far right */
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+
+/* --- Hover & Active States --- */
+
+/* Hover effect for non-active buttons */
+.custom-tablinks:not(.active):hover {
+}
+
+/* Style for the ACTIVE/SELECTED button */
+.custom-tablinks.active {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Show the arrow on the ACTIVE button */
+.custom-tablinks.active .arrow-icon {
+  opacity: 1;
+}
+
+
+/* --- Custom Scrollbar --- */
+
+/* For Firefox */
+.custom-tab {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* thumb color, track color */
+}
+
+/* For WebKit Browsers (Chrome, Safari, Edge) */
+.custom-tab::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-tab::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-tab::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent handle */
+  border-radius: 10px;
+}
+
+.custom-tab::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Darker on hover */
+}
+/* --- Main Content Panel --- */
+.custom-tab-content-container{
+  height:350px;
+  padding:40px;
+}
+.custom-tab-content {
+  background-color: #ffffff;
+  border-radius: 12px;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display:none;
+}
+
+.custom-tab-content {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent; /* thumb color, track color */
+}
+
+/* For WebKit Browsers (Chrome, Safari, Edge) */
+.custom-tab-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-tab-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-tab-content::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Semi-transparent handle */
+  border-radius: 10px;
+}
+
+.custom-tab-content::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Darker on hover */
+}
+/* --- Section Styling --- */
+.custom-content-section {
+  margin-bottom: 2rem; /* Space between sections */
+}
+
+.custom-content-section h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Key: Creates the two-column grid --- */
+.custom-content-icons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+  gap: 1rem;                             /* Space between cards */
+}
+
+/* --- Individual Tech Cards --- */
+.tech-item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #f8f9fa; /* Light grey background */
+  border: 1px solid #e9ecef;   /* Subtle border */
+  border-radius: 12px;
+  text-decoration: none;
+  color: #212529;
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+
+/* --- Hover Effect for Cards --- */
+.tech-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+  border-color: #ddd;
+}
+
+/* --- Logos inside the Cards --- */
+.tech-item img {
+  height: 28px;
+  width: 28px;
+  margin-right: 1rem;
+  object-fit: contain;
+}
+/* --- Icons inside the Tech Cards --- */
+.tech-item i {
+  font-size: 1.5rem;   
+  width: 30px;         
+  text-align: center;  
+  color: #555;        
+  margin-right: 12px;  /* This adds the space you want */
+}
