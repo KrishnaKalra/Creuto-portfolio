@@ -9,8 +9,8 @@
 }
 .custom-hero-profile {
   border-radius: 50%;
-  width: 280px;
-  height: 280px;
+  width: 350px;
+  height: 350px;
   margin: 10px;
 }
 .custom-text-box p {
@@ -331,4 +331,96 @@ label{
   text-align: center;  
   color: #555;        
   margin-right: 12px;  /* This adds the space you want */
+}
+.custom-slider {
+    transform: rotate(-4deg) translateX(-30px); /* Tilt and shift left */
+    transform-origin: center; /* Pivot point for rotation */
+    width:105vw !important;
+    margin-top: 65px;
+    
+   padding: 5px 0 !important;
+}
+
+.custom-hero-text{
+  font-size: 90px;
+  padding:0px;
+  margin:0px
+}
+.custom-hero-p{
+  font-size: 25px !important;
+  color:black;
+}
+.custom-hero-icon{
+  height:30px !important;
+  width:30px !important;
+}
+.custom-hero-small-text{
+  font-size: 60px;
+}
+.custom-hero-text-component{
+  padding-left:60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* Make sure the custom columns have no default padding */
+.custom-hero-button-section{
+  width:400px;
+  margin-top:30px;
+}
+.custom-hero-button-section .custom-hero-button-1 {
+  padding: 0;
+}
+
+/* Styling for the <a> tags which now act as our button parts */
+.button-link {
+  display: block; /* Makes the link fill the entire column */
+  padding: 12px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  height: 100%; /* Ensures both links are the same height */
+}
+
+/* --- Border and Radius Trick --- */
+/* Create the left side of the button border */
+.button-left {
+  border: 1px solid #c0c0c0;
+  border-right: none; /* Remove the right border to prevent a double border in the middle */
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+/* Create the right side of the button border */
+.button-right {
+  border: 1px solid #c0c0c0;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+/* --- Color Styling --- */
+.dark-part {
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.light-part {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+/* --- HOVER EFFECT --- */
+/* By putting the :hover on the parent row, both links change at the same time */
+.custom-hero-button-section:hover .dark-part {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.custom-hero-button-section:hover .light-part {
+  background-color: #1a1a1a;
+  color: #ffffff;
 }

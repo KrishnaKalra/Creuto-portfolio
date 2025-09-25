@@ -6769,11 +6769,11 @@ img.plasicon {
 }
 .sofax-service-slider {
   background: var(--dark-bg);
-  padding: 50px 0;
+  padding: 20px 0;
 }
 @media (max-width: 991px) {
   .sofax-service-slider {
-    padding: 30px 0;
+    padding: 20px 0;
   }
 }
 .sofax-service-slider-wrap {
@@ -6796,7 +6796,8 @@ img.plasicon {
   white-space: nowrap;
 }
 .sofax-slider-service-section .slick-slide {
-  width: auto !important;
+  width: 105% !important;
+
 }
 .sofax-slider-service-section .slick-track {
   display: flex;
